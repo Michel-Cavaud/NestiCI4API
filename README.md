@@ -15,3 +15,5 @@ Cette API permet de :
 Les tokens (jetons) sont enregistrés dans une table jeton. Chaque jeton "appartient" à une application
 Une table contient la liste des applications qui utilisent l'API
 Une table enregistre les logs de l'utilisation des jetons avec l'Identifiant du jeton, l'utilisateur connecté s'il existe et la date (datetime).
+
+La documentation de l'API : [ICI](https://cavaud.needemand.com/realisations/APINesti/public/)
