@@ -27,7 +27,7 @@ class BaseController extends Controller
 	 *
 	 * @var array
 	 */
-	protected $helpers = [];
+	protected $helpers = ['url'];
 
 	/**
 	 * Constructor.
@@ -45,8 +45,7 @@ class BaseController extends Controller
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
 		// E.g.: $this->session = \Config\Services::session();
-                
-                $this->twig = new \Kenjis\CI4Twig\Twig();
-                
+
+		$this->twig = new \Kenjis\CI4Twig\Twig();
 	}
 }

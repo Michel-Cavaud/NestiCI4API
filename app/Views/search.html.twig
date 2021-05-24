@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block api %} 
+
+    <article class="content">
+
+    <h1>Lecture des recettes par élément du nom</h1>
+    <h3>GET - {{ base_url('api') }}/{token}/search/{valsearch} <a target="_blanck" href="{{ base_url('api') }}/jetonDocAPI/search/kiwi">Test API</a></h3>
+    <h4>Paramètres : token = Token API, valsearch = élément chercher dans le nom de la recette</h4>
+    <div class="flexbox-container">
+        <div>
+            <h4>Retour format JSON :</h4>
+            <img class="responsive" src="{{base_url('assets/images/jsonSearch.png')}}">
+        </div>
+        <div>
+            <h4>Détail des données</h4>
+            
+            <div> "id_recettes": identifiant rectte</div>
+            <div>"date_creation_recettes": date création recette</div>
+            <div>"nom_recettes": nom recette</div>
+            <div>"difficulte_recettes": difficulté recette (1 à 5)</div>
+            <div>"nombre_personne_recettes": recette pour x personnes</div>
+            <div>"etat_recettes": etat de la recette</div>
+            <div>"temps_recettes": durée de la préparation</div>
+            <div> "id_chef": identifiant du chef de la recette</div>
+            <div> "id_images": identifiant de l'image de la recette</div>
+
+        </div>
+    </div>
+    </article> 
+
+{% endblock %}

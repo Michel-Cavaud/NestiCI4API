@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block api %} 
+
+    <article class="content">
+
+    <h1>Lecture d'une recette par sa catégorie</h1>
+    <h3>GET - {{ base_url('api') }}/{token}/recipesbycategory/{id} <a target="_blanck" href="{{ base_url('api') }}/jetonDocAPI/recipesbycategory/1">Test API</a></h3>
+    <h4>Paramètres : token = Token API, id = identifiant catégorie</h4>
+    <div class="flexbox-container">
+        <div>
+            <h4>Retour format JSON :</h4>
+            <img class="responsive" src="{{base_url('assets/images/jsonRecipesbycategory.png')}}">
+        </div>
+        <div>
+            <h4>Détail des données</h4>
+            
+            <div>"id": identifiant recette</div>
+            <div>"cat": nom de la catégorie</div>
+            <div>"idcat": identifiant catégorie</div>
+            <div>"title": nom recette</div>
+            <div>"author": nom prénom chef</div>
+            <div>"img": nom image recette</div>
+            <div>"diff": difficulté recette (1 à 5)</div>
+            <div>"nb": préparation pour x personne</div>
+            <div>"temps": temps préparation recette</div>
+
+        </div>
+    </div>
+    </article> 
+
+{% endblock %}

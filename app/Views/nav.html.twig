@@ -1,0 +1,14 @@
+<input type="checkbox" id="navcheck" role="button" title="menu">
+<label for="navcheck" aria-hidden="true" title="menu">
+	<span class="burger">
+		<span class="bar">
+			<span class="visuallyhidden">Menu</span>
+		</span>
+	</span>
+</label>
+<nav id="menu">
+	<a href="{{base_url('api/doc/recipes') }}">GET recipes</a>
+	<a href="{{base_url('api/doc/recipe') }}">GET Recipe</a>
+	<a href="{{base_url('api/doc/recipesbycategory') }}">GET Recipes by category</a>
+	<a href="{{base_url('api/doc/search') }}">GET Search</a>
+</nav>

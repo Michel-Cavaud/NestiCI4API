@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="{{ base_url('assets/css/style.css') }}" type="text/css" rel="stylesheet" />
+        <title>{% block titre %}Api Nesti{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+   
+        {% block nav %} {{ include('/nav.html.twig') }}    {% endblock %}
+    
+    <main>
+        {% block api %}     {% endblock %}
+    </main>
+
+    <footer>
+        {% block footer %}  {% endblock %}
+    </footer> 
+</body>
+</html>
